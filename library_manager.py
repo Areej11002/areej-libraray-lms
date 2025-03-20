@@ -320,7 +320,7 @@ if st.session_state.current_view == "add":
         st.markdown("<div class='sucess-message'> Book added sucessfully!</div>", unsafe_allow_html=True)
         st.balloons()
         st.session_state.book_added = False
-elif st.session_state.current_virw =="library":
+elif st.session_state.current_view =="library":
     st.markdown("<h2 class ='sub-header'> Your Library </h2>", unsafe_allow_html=True)
 
     if not st.session_state.library:
