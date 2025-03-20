@@ -371,7 +371,7 @@ elif st.session_state.current_view =="search":
         if st.session_state.search_results:
             st.markdown(f"<h3> found {len(st.session_state.search_results)} results:</h3>", unsafe_allow_html=True)
 
-            for 1, book in enumerate(st.session_state.search_results):
+            for i, book in enumerate(st.session_state.search_results):
                 st.markdown(f"""
                             <div class = 'book-card'>
                             <h3>{book['title']}</h3>
