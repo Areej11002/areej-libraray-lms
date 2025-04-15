@@ -345,7 +345,6 @@ elif st.session_state.current_view =="library":
                     if st.button(f"Remove", key=f"remove_{i}", use_container_width=True):
                         if remove_book(i):
                             st.rerun()
-                        st.rerun()
                     with col2:
                         new_status = not book['read_status']
                         status_label = "Mark as read" if not book['read_status'] else "Mark as Unread"
