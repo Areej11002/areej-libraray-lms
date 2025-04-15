@@ -311,9 +311,9 @@ if st.session_state.current_view == "add":
             ])
             read_status = st.radio("Read Status", ["Read", "Unread"], horizontal=True)
             read_bool = read_status == "Read"
-        submit_buttom = st.form_submit_button(label="Add Book")
+        submit_button = st.form_submit_button(label="Add Book")
 
-        if submit_buttom and title and author:
+        if submit_button and title and author:
             add_book(title,author,publication_year,genre,read_bool)
 
     if st.session_state.book_added:
